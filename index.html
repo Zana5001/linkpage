@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me</title>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: url('https://scontent.fosm2-1.fna.fbcdn.net/v/t1.6435-9/131889987_2808875602659062_2760721262457737306_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=cDRg_-iwjh8Q7kNvwEd0ZMf&_nc_oc=AdkkRbDU13Cyv2uOPaNQiwpyGJT-znZhZoRkdICdhmg-fzsweEEID3z2xvFrkg9PtjU&_nc_zt=23&_nc_ht=scontent.fosm2-1.fna&_nc_gid=on_jqhbI_QgTpnmYqR-_uQ&oh=00_Afd1KoBRHmT3CqGGnVNIwojb7fMeOQE91p_mejg0DCt60w&oe=690FB0D6') no-repeat center center/cover;
+      position: relative;
+      overflow: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      backdrop-filter: blur(15px);
+      background: rgba(0,0,0,0.5);
+      z-index: 0;
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .profile-pic {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid rgba(255,255,255,0.7);
+      margin-bottom: 20px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+      transition: transform 0.3s;
+    }
+
+    .profile-pic:hover {
+      transform: scale(1.05);
+    }
+
+    h2 {
+      color: white;
+      margin-bottom: 25px;
+      letter-spacing: 1px;
+      text-shadow: 0 0 10px rgba(0,0,0,0.7);
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+      font-size: 22px;
+      margin: 12px 0;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 25px;
+      border-radius: 12px;
+      transition: 0.3s;
+      backdrop-filter: blur(10px);
+      background: linear-gradient(135deg, rgba(255,255,255,0.15), rgba(255,255,255,0.05));
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    a:hover {
+      background: linear-gradient(135deg, #00acee, #005f9e);
+      transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(0,172,238,0.5);
+    }
+
+    .icon {
+      width: 25px;
+      text-align: center;
+    }
+
+    @media(max-width: 480px){
+      .profile-pic {
+        width: 100px;
+        height: 100px;
+      }
+
+      a {
+        font-size: 18px;
+        padding: 10px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <img src="https://scontent.fosm2-1.fna.fbcdn.net/v/t1.6435-9/131889987_2808875602659062_2760721262457737306_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=cDRg_-iwjh8Q7kNvwEd0ZMf&_nc_oc=AdkkRbDU13Cyv2uOPaNQiwpyGJT-znZhZoRkdICdhmg-fzsweEEID3z2xvFrkg9PtjU&_nc_zt=23&_nc_ht=scontent.fosm2-1.fna&_nc_gid=on_jqhbI_QgTpnmYqR-_uQ&oh=00_Afd1KoBRHmT3CqGGnVNIwojb7fMeOQE91p_mejg0DCt60w&oe=690FB0D6" alt="Profile Photo" class="profile-pic">
+
+    <h2>Contact Me</h2>
+
+    <a href="https://instagram.com/zana.5001" target="_blank">
+      <i class="fab fa-instagram icon"></i> Instagram
+    </a>
+
+    <a href="https://snapchat.com/add/zana.5001" target="_blank">
+      <i class="fab fa-snapchat-ghost icon"></i> Snapchat
+    </a>
+
+    <a href="https://tiktok.com/@zanaekmalay" target="_blank">
+      <i class="fab fa-tiktok icon"></i> TikTok
+    </a>
+
+    <a href="https://tellonym.me/zana.ekmalay" target="_blank">
+      <i class="fa-solid fa-message icon"></i> Tellonym
+    </a>
+
+    <a href="tel:+9647517933090">
+      <i class="fa-solid fa-phone icon"></i> Call Me
+    </a>
+  </div>
+
+</body>
+</html>
